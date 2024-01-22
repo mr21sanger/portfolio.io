@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    font-weight: 400;
+
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    position: relative;
+}
+
+.cont-1,
+.cont-2 {
+    height: 95vh;
+    background-color: rgb(32, 32, 32);
+    border-radius: 1em;
+    border: 1px solid black;
+    /* position: absolute; */
+}
+
+.cont-1 {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+    align-items: center;
+}
+
+.cont-2 {
+    width: 72vw;
+}
+
+/* *****************CONTAINER 1 *************************/
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 94vh;
+    width: 100%;
+    position: relative;
+}
+
+
+.img-frame {
+    background-color: black;
+    box-shadow: 1px 1px 2px black inset;
+    width: 13.8vw;
+    height: 29vh;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+}
+
+.img-frame img {
+    object-fit: cover;
+    height: 28.1vh;
+    width: 13.5vw;
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px rgb(27, 27, 27);
+    border: 2px solid black;
+}
+
+.backside {
+    height: 10vh;
+    background-color: rgb(21, 21, 21);
+    width: 100%;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    border-bottom: 1.5px solid black;
+}
+
+#back {
+    margin: 0.5em;
+}
+
+.name {
+    position: absolute;
+    top: 38%;
+}
+
+.name span {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color:beige;
+    font-family: 'Merriweather', serif;
+    text-shadow: 1px 1px 5px black;
+}
+
+.bio{
+    position: absolute;
+    top: 43.5%;
+}
+
+.bio span{
+    font-size: 1.2rem;
+    color: aliceblue; 
+}
+.quickie {
+    height: 50vh;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+}
+
+.accounts {
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    width: 13.8vw;
+    margin-block: 2em;
+    /* background-color: rebeccapurple; */
+}
+
+.info i,
+.visit i {
+    background-color: rgb(27, 27, 27);
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px black;
+    text-align: center;
+    padding-block: 0.5em;
+    width: 2.5vw;
+    font-size: 1.5rem;
+    color: aliceblue;
+    height: 3.2vh;
+    border-radius: 0.3em;
+}
+
+
+.detail h3 {
+    font-size: 1rem;
+    color:beige;
+}
+
+.detail a {
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 1.2rem;
+}
+
+ .detail {
+    width: 9vw;
+    overflow: hidden;
+}
+
+
+/* ****************************CONTAINER 2**************************** */
+.head {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(21, 21, 21);
+    height: 10vh;
+    border-bottom: 1px solid rgb(8, 8, 8);
+    box-shadow: 1px 1px 2px black;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    /* position: relative; */
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 69vw;
+}
+
+.navbarItems,
+.selected {
+    width: 10vw;
+    text-align: center;
+    height: 5vh;
+    list-style: none;
+    border: 2px solid black;
+    box-shadow: 1px 1px 4px black;
+    background-color: rgb(29, 29, 29);
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.selected {
+    display: none;
+}
+
+.selected span {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbarItems:hover,
+.clicked {
+    /* font-size: 1.05rem; */
+    transform: scale(1.03);
+    color: wheat;
+}
+
+.mobile-icon {
+    display: none;
+    font-size: 1.8rem;
+}
+
+
+
+/* **********ABOUT************* */
+
+.content {
+    height: 83vh;
+    overflow: scroll;
+}
+.content::-webkit-scrollbar{
+    display: none;
+}
+
+.about-container,.qual-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.myself {
+    width: 65vw;
+    height: 20vh;
+    line-height: 1.55em;
+    padding-block: 0.51em;
+    margin: auto;
+    text-align: left;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.heading {
+    text-align: left;
+    width: 65vw;
+    color: beige;
+    font-size: 1.9rem;
+    font-weight: bolder;
+    margin-block: 0.5em;
+    -webkit-text-stroke: 2px;
+    text-shadow: 1px 1px 5px black;
+    -webkit-text-stroke-color: black;
+}
+
+.hobby {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+.hob1 {
+    width: 30vw;
+    height: 20vh;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    box-shadow: 0.2px 0.2px 1px black;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* **************************EDUCATION******************** */
+
+.education {
+    height: 75vh;
+}
+
+.edu-img {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.edu-img img {
+    margin: auto;
+    height: 18vh;
+}
+
+.edu-cont {
+    width: 60vw;
+    height: 25vh;
+    background-color: rgb(27, 27, 27);
+    margin: auto;
+    margin-block: 1em;
+    border: 2px solid black;
+    box-shadow: 0 2px 5px black;
+    border-radius: 0.51em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edu-info {
+    line-height: 1.5em;
+    width: 80%;
+}
+
+.edu-info h3 {
+    color: beige;
+    font-family: 'Merriweather', serif;
+    font-size: x-large;
+}
+
+.edu-info p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    margin-block: 0.52em;
+    color: aliceblue;
+}

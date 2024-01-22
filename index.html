@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="res.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Martel+Sans&family=Merriweather:wght@300&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="screen">
+
+                <!-- *****************************************
+                         CONTAINER 1
+                ***************************************** -->
+                <div class="cont-1">
+                    <div class="profile">
+                        <div class="backside">
+                            <div class="mobile-icon" id="back">
+                                <i class="fa-solid fa-arrow-left" name="back"></i>
+                            </div>
+                        </div>
+
+                        <div class="profileImg">
+                            <div class="img-frame">
+                                <img src="image/1672586124940.jpg" alt="My image">
+                            </div>
+                        </div>
+
+                        <div class="name">
+                            <span>Shiwang Sanger</span>
+                        </div>
+                        <div class="bio">
+                            <span>Full Stack Developer </span>
+                        </div>
+
+                        <div class="quickie">
+                            <div class="accounts">
+                                <a href="https://www.linkedin.com/in/shiwang-sanger-470750222/" class="visit"
+                                    target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/mr21sanger" class="visit" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="#" class="visit"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                            <div class="phone info">
+                                <a href="tel:+919891061356"><i class="fa-solid fa-phone"></i></a>
+                                <div class="detail">
+                                    <h3>Phone Number</h3>
+                                    <a href="tel:+919891061356">+91-9891061356</a>
+                                </div>
+                            </div>
+
+                            <div class="email info">
+                                <a href="mailto:shiwang21sanger@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                                <div class="detail">
+                                    <h3>E-mail</h3>
+                                    <a href="mailto:shiwang21sanger@gmail.com"
+                                        class="mail">shiwang21sanger@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- *****************************************
+                         CONTAINER 2
+                ***************************************** -->
+                <div class="cont-2">
+
+                    <!-- ***********NAVIGATION BAR****************** -->
+                    <header class="head">
+                        <!-- ******************* MOBILE VIEW ******************** -->
+                        <div class="mobile-icon" id="myProfile">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="selected">
+                            <span>SHIWANG</span>
+                        </div>
+
+                        <nav class="navbar">
+                            <ul class="navbar-list">
+                                <li class="navbarItems clicked" onclick="change(this,'about')">ABOUT</li>
+                                <li class="navbarItems" onclick="change(this,'qualification')">QUALIFICATIONS</li>
+                                <li class="navbarItems" onclick="change(this,'projects')">PROJECTS</li>
+                                <li class="navbarItems" onclick="change(this,'achievements')">ACHIEVEMENTS</li>
+                                <li class="navbarItems" onclick="change(this,'skills')">SKILLS</li>
+                            </ul>
+                        </nav>
+
+                        <!-- ******************* MOBILE VIEW ******************** -->
+                        <div class="mobile-icon" id="option">
+                            <i class="fa-solid fa-bars  mobile-nav-btn" name="menu"></i>
+                            <i class="fa-solid fa-close mobile-nav-btn" name="close"></i>
+                        </div>
+                    </header>
+
+                    <!-- ***********************ABOUT************************** -->
+                    <div class="content " id="about">
+                        <div class="about-container">
+                            <div class="myself">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sequi sint
+                                    maiores modi quia et assumenda vitae repudiandae! Ea, fugiat atque quidem deleniti
+                                    enim maiores delectus laudantium culpa veniam cum id placeat fuga velit dicta iusto
+                                    expedita, repudiandae ex quo? Atque ut voluptatibus, quia dolor dicta ad ex magni
+                                    fugiat.</p>
+                            </div>
+                            <div class="hobbies">
+                                <div class="heading">
+                                    <h2>HOBBIES</h2>
+                                </div>
+                                <div class="hobby">
+                                    <div class="hob1"></div>
+                                    <div class="hob1"></div>
+                                    <div class="hob1"></div>
+                                    <div class="hob1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ***********************QUALIFICATION************************** -->
+                    <div class="content hide" id="qualification">
+                        <div class="qual-container">
+                            <div class="heading">
+                                <h2>My Qualifications</h2>
+                            </div>
+
+                            <div class="education">
+                                <!-- qualification-1 -->
+                                <div class="edu-cont">
+                                    <div class="edu-img">
+                                        <img src="image/s4.png" alt="logo">
+                                    </div>
+
+                                    <div class="edu-info">
+                                        <h3>SATYUG DARSHAN INSTITUTE OF ENGINEERING AND TECHNOLOGY</h3>
+                                        <p class="edu">affilated with J.C. Bose University of Science and Technology,
+                                            YMCA <br>
+                                            Bachelor's Degree, Computer Science <br>
+                                            October 2021-2025</p>
+                                    </div>
+                                </div>
+
+                                <!-- qualification-2 -->
+                                <div class="edu-cont">
+                                    <div class="edu-img">
+                                        <img src="image/avm-school-1.png" alt="logo" class="sch">
+                                    </div>
+
+                                    <div class="edu-info">
+                                        <h3>ARYA VIDYA MANDIR SR. SEC. SCHOOL</h3>
+                                        <p class="edu">12th Class, Science, with 86.2% marks<br>
+                                            CBSE<br>
+                                            March 2020-2021</p>
+                                    </div>
+                                </div>
+
+                                <!-- qualification-3 -->
+                                <div class="edu-cont">
+                                    <div class="edu-img">
+                                        <img src="image/avm-school-1.png" alt="" class="sch">
+                                    </div>
+
+                                    <div class="edu-info">
+                                        <h3>ARYA VIDYA MANDIR SR. SEC. SCHOOL</h3>
+                                        <p class="edu">10th Class, with 81.2% marks<br>
+                                            CBSE<br>
+                                            April 2018-2019</p>
+                                    </div>
+                                </div>
+
+                                <!-- qualification-4 -->
+                                <div class="edu-cont">
+                                    <div class="edu-img">
+                                        <img src="image/WhatsApp_Image_2021-12-04_at_5.52.48_PM-removebg-preview.png"
+                                            alt="" class="aca">
+                                    </div>
+
+                                    <div class="edu-info">
+                                        <h3>KIRAN ACADEMY</h3>
+                                        <p class="edu">Diploma in Computer Science<br>
+                                            June 2019-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ***********************PROJECTS************************** -->
+                    <div class="content hide" id="projects">
+                        <h1>this is projects</h1>
+                    </div>
+
+                    <!-- ***********************ACHIEVEMENTS************************** -->
+
+                    <div class="content hide" id="achievements">
+                        <h1>this is ACHIEVEMENTS</h1>
+                    </div>
+
+                    <!-- ***********************SKILLS************************** -->
+
+                    <div class="content hide" id="skills">
+                        <h1>this is SKILLS</h1>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

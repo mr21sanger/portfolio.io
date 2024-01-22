@@ -1,0 +1,234 @@
+@media(max-width:62em) {
+    .cont-1 {
+        width: 95vw;
+        transform: translateX(-100%);
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+        transition: all 0.2s linear;
+        position: absolute;
+    }
+
+
+    .cont-2 {
+        width: 95vw;
+        transition: all 0.2s linear;
+        position: absolute;
+    }
+
+    .head {
+        position: relative;
+        z-index: 999
+    }
+
+    .navbar {
+        width: 80%;
+        height: 84.63vh;
+        background-color: rgb(29, 29, 29);
+        position: absolute;
+        top: 101%;
+        right: 0%;
+        display: flex;
+        align-items: baseline;
+        border-left: 1px solid black;
+        box-shadow: -0.5px 0px 3px black;
+        border-bottom-right-radius: 1em;
+
+        transform: translateX(100%);
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.2s linear;
+
+    }
+
+    .navbarItems:hover,
+    .clicked {
+        /* font-size: 1.05rem; */
+        transform: scale(1);
+        color: white;
+    }
+
+    .clicked {
+        color: rgb(111, 111, 111);
+    }
+
+    .navbar-list {
+        flex-direction: column;
+    }
+
+
+    .navbarItems {
+        width: 75vw;
+        height: 9vh;
+        box-shadow: none;
+        margin-bottom: 0.01em;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border: 1px solid black;
+        border-radius: 0;
+    }
+
+    .selected {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        height: 6.5vh;
+        font-size: 1.3rem;
+        box-shadow: 1px 1px 2px black;
+
+    }
+
+    .mobile-icon {
+        display: block;
+        font-size: 1.5rem;
+        width: 10vw;
+        height: 6.8vh;
+        border-radius: 0.5em;
+        border: 1px solid black;
+        box-shadow: 1px 1px 2px black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-nav-btn[name="close"] {
+        display: none;
+    }
+
+    .active .navbar {
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .active .mobile-icon .mobile-nav-btn[name="close"] {
+        display: inline-block;
+    }
+
+    .active .mobile-icon .mobile-nav-btn[name="menu"] {
+        display: none;
+    }
+
+    .current .cont-1 {
+        transform: translateX(0);
+        visibility: visible;
+        pointer-events: all;
+        opacity: 1;
+    }
+
+    .current .cont-2 {
+        transform: translateX(100%);
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+
+    .img-frame {
+        width: 31vw;
+        height: 18vh;
+        top: 12%;
+        left: 1.5%
+    }
+
+    .img-frame img {
+        width: 30.8vw;
+        height: 19vh;
+    }
+
+   
+
+    .name {
+        position: absolute;
+        top: 17%;
+        left: 39%;
+    }
+    .bio {
+        top: 22.5%;
+        left: 45%;
+    }
+
+    .quickie {
+        position: absolute;
+        top: 37.5%;
+        width: 100%;
+        left: 0%;
+        /* background-color: red; */
+    }
+    .info {
+        width: 82vw;
+        margin-block: 1em;
+        padding-left: 2.28em;
+        /* background-color: rebeccapurple; */
+    }
+    .detail{width: 61vw;}
+
+    .accounts {
+        height: 5vh;
+        width: 100%;
+        margin-bottom: 3em;
+    }
+
+    .info i,
+    .visit i {
+        width: 18vw;
+    }
+    .myself {
+        width: 85vw;
+        height: 70vh;
+        text-align: center;
+    }
+
+    .heading {
+        text-align: center;
+        width: 85vw;
+        font-size: 1.6rem;
+    }
+
+
+    .hobby {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 1em;
+        column-gap: 1em;
+    }
+
+    .hob1 {
+        width: 90vw;
+        height: 20vh;
+        border: 2px solid black;
+        border-radius: 0.5em;
+        box-shadow: 0.2px 0.2px 1px black;
+    }
+
+    .qual-container {
+        gap: 0em;
+    }
+
+    .edu-info {
+        line-height: normal;
+        width: 75%;
+    }
+
+    .edu-cont {
+        width: 90vw;
+        height: 22.5vh;
+        border-radius: 0.4em;
+    }
+
+    .edu-img img {
+        height: 10vh;
+        width: 22vw;
+    }
+
+    .edu-info h3 {
+        font-size: 1rem;
+    }
+
+    .edu-info p {
+        font-size: 0.8rem;
+    }
+}
